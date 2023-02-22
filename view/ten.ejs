@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name=”viewport” content=”device-width” initial-scale=1.0>
+        <title>TMDB</title>
+        <link rel="stylesheet" href="../Scss/index.css">
+    </head>
+    <body>
+        <h1>Ten movies list to choose from</h1>
+        <ul>
+            <% for (var key in data) { %>
+                <li><a href="/list/<%=key-1+2 %>"><%=data[key]%></a></li>
+            <% } %>
+        </ul>
+       
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    </body>
+</html>
